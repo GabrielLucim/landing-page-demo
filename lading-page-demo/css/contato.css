@@ -1,7 +1,12 @@
 body {
     margin: 0;
 }
-
+.mensagem-erro {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
 .conteiner-contato {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -141,6 +146,17 @@ body {
 
 
 @media (min-width: 768px) {
+
+    .conteiner-cartao a {
+        color: #64748B;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .conteiner-cartao a:hover {
+        color: #5600B2;
+    }
+    
     body {
         margin: 0;
     }
@@ -251,7 +267,7 @@ body {
 
     .conteiner-formulario-conteudo input {
         margin: 0;
-        
+
         border: 1px solid #E0DAE7;
         border-radius: 0.5rem;
         width: 100%;
@@ -271,19 +287,19 @@ body {
         flex: 1;
     }
 
-.textarea {
-    width: 100%;
-    border: 1px solid #E0DAE7;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: "Inter", sans-serif;
-    color: #6B7280;
-    box-sizing: border-box;
+    .textarea {
+        width: 100%;
+        border: 1px solid #E0DAE7;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: "Inter", sans-serif;
+        color: #6B7280;
+        box-sizing: border-box;
 
-    min-height: 140px;
-    resize: vertical;
-}
+        min-height: 140px;
+        resize: vertical;
+    }
 
     #formulario-botao {
         width: 100%;
@@ -313,6 +329,22 @@ body {
         background-color: #1f0041;
         transform: scale(0.99)
     }
-	
-	
+
+@media (max-width: 900px) {
+
+    .conteiner-contato-conteudo {
+
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .conteiner-nome-email {
+
+        flex-direction: column;
+
+    }
+
+}
+
 }
